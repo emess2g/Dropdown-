@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .dropdown{
+            padding:  1rem 2rem;
+            background-color: #3e8e41;
+            margin-top: 10rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover  .dropdown-content{
+            display: block;
+        }
+
+        .dropdown2{
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content2{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-sizing: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content2 a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content2 a:hover{
+            background-color: #f1f1f1;
+        }
+
+
+        .dropbtn{
+            cursor: pointer;
+            padding: 16px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            background-color: #4CAF50;
+        }
+
+        .dropdown1:hover  .dropdown-content2{
+            display: block;
+        }
+
+        .dropdown1:hover  .dropbtn{
+            background-color: #3e8e41;
+        }
+
+        #drp1{
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+ 
+<div id="drp1" class="dropdown1">
+    <button class="dropbtn">Move mouse over to the view options</button>
+    <div class="dropdown-content2">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+</div>
+
+
+<div class="dropdown">
+    <span>Move Mouse Over</span>
+    <div class="dropdown-content">
+        <p>Hello World!</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
